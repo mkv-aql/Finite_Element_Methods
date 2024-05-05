@@ -68,3 +68,13 @@ def Stiffness_Matrix_1(alpha, beta):
                                  [-np.sin(beta) * np.cos(alpha), -np.sin(alpha) * np.sin(beta),
                                   np.sin(beta) * np.cos(beta), np.sin(beta) ** 2]])
     return stiffness_matrix
+
+def Stiffness_Matrix_Mapping_2D_Single(b_matrix, c_matrix, det_jacobian, weight):
+    # B transpose
+    b_matrix_transpose = b_matrix.transpose()
+
+    # Stiffness Matrix Mapping
+    stiffness = b_matrix_transpose * c_matrix * b_matrix * det_jacobian * weight
+
+    return stiffness
+
