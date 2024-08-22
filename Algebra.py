@@ -1,4 +1,7 @@
 __author__ = 'mkv-aql'
+
+import math
+
 from sympy import Symbol, cos, factor, symbols
 
 x = Symbol('x')
@@ -34,7 +37,12 @@ result_1 = Derivative(f(x), x)
 print(result_1)
 print(dsolve(result_1))
 
+#Substitute values into y and z
+res = x + y + z
+print(res.subs({y: 1, z: 2}))
 
+
+'''
 #Integration
 from sympy import integrate, init_printing
 k, j = symbols('k,j')
@@ -45,3 +53,7 @@ print(d)
 init_printing(use_unicode=False, wrap_line=False)
 d = integrate(k**2 + k + 1, k)
 print(d)
+'''
+
+# Sandbox
+

@@ -1,0 +1,36 @@
+Gauss Quadrature - Isoparametric Elements
+==========================================
+
+Simple_Linear_Shape_Functions.py
+--------------------------------
+- Creating a sub-stiffness matrix for a single iteration of Gauss point.
+- From coordinates -->> to K(i,j) of an (r,s)
+
+Simple_sub_and_stiffness_matrix.py
+---------------------------------
+- Creating a sub-stiffness matrix for a ALL iteration of Gauss point.
+- From coordinates -->> to K(i,j) of ALL (r,s)
+
+
+Thermal Conduction
+==================
+
+Simple_Thermal_Conduction.py
+----------------------------
+- Creating a full stiffness matrix of 1 element.
+- From coordinates -->>  K of 1 element.
+
+Simple_Thermal_Stiffness_Matrix_Assembly.py
+-------------------------------------------
+- Must use Simple_Thermal_Conduction.py first, to create K of 1 element.
+- Creating a full stiffness matrix of ALL elements.
+- K of 1 element -->>  K of ALL elements.
+
+
+
+Structural Mechanics
+====================
+
+Simple_Structural_Mechanics.py
+-----------------------------
+- Creating a full stiffness matrix of 1 element.
